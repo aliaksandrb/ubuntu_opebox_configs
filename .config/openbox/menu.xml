@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+<menu execute="obm-xdg" id="xdg-menu" label="xdg"/>
+	<menu id="root-menu" label="Openbox 3">
+		<item label="MousePad">
+			<action name="Execute">
+				<execute>
+					mousepad
+				</execute>
+			</action>
+		</item>
+		<item label="Firefox">
+			<action name="Execute">
+				<execute>
+					firefox
+				</execute>
+			</action>
+		</item>
+		<item label="GoogleChrome">
+			<action name="Execute">
+				<execute>
+					google-chrome
+				</execute>
+			</action>
+		</item>
+		<separator/>
+                <menu id="xdg-menu"/>
+		<separator/>
+		<menu id="root-menu-04656" label="Openbox">
+			<item label="ObConf">
+				<action name="Execute">
+					<execute>
+						obconf
+					</execute>
+				</action>
+			</item>
+			<item label="ObMenu">
+				<action name="Execute">
+					<execute>
+						obmenu
+					</execute>
+				</action>
+			</item>
+			<item label="ObApps">
+				<action name="Execute">
+					<execute>
+						obapps
+					</execute>
+				</action>
+			</item>
+			<item label="ObKey">
+				<action name="Execute">
+					<execute>
+						obkey
+					</execute>
+				</action>
+			</item>
+			<item label="Reconfigure">
+				<action name="Reconfigure"/>
+			</item>
+			<item label="Restart">
+				<action name="Restart"/>
+			</item>
+		</menu>
+		<separator/>
+		<menu id="client-list-menu"/>
+		<separator/>
+		<item label="ObLogout">
+			<action name="Execute">
+				<execute>
+					oblogout
+				</execute>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>
