@@ -126,12 +126,29 @@
 					<execute>libfm-pref-apps</execute>
 				</action>
 			</item>
+			<item label="Software Sources">
+				<action name="Execute">
+					<execute>software-properties-gtk</execute>
+				</action>
+			</item>
 			<item label="Настройка внешнего вида">
 				<action name="Execute">
 					<execute>lxappearance</execute>
 				</action>
 			</item>
 		</menu>
+		<menu id="xdg-Administration" label="Administration">
+			<item label="Synaptic Package Manager">
+				<action name="Execute">
+					<execute>synaptic-pkexec</execute>
+				</action>
+			</item>
+		</menu>
+		<item label="Менеджер пакетов Synaptic">
+			<action name="Execute">
+				<execute>synaptic</execute>
+			</action>
+		</item>
 		<item label="XTerm">
 			<action name="Execute">
 				<execute>xterm</execute>

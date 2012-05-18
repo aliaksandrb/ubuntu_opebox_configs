@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
-<menu execute="obm-xdg" id="xdg-menu" label="xdg"/>
+	<menu execute="obm-xdg" id="xdg-menu" label="xdg"/>
 	<menu id="root-menu" label="Openbox 3">
 		<item label="MousePad">
 			<action name="Execute">
@@ -24,7 +24,7 @@
 			</action>
 		</item>
 		<separator/>
-                <menu id="xdg-menu"/>
+		<menu id="xdg-menu"/>
 		<separator/>
 		<menu id="root-menu-04656" label="Openbox">
 			<item label="ObConf">
@@ -70,6 +70,11 @@
 				<execute>
 					oblogout
 				</execute>
+			</action>
+		</item>
+		<item label="LockScreen">
+			<action name="Execute">
+				<execute>xlock -mousemotion +description -mode blank -bg black -fg grey30 -font '-adobe-helvetica-bold-r-normal--*-110-*-*-*-*-*-*' -planfont '-adobe-helvetica-bold-r-normal--*-110-*-*-*-*-*-*' -timeout 6 -info &quot; &quot; -username &quot;  &quot; -password &quot; &quot; -icongeometry 30x30</execute>
 			</action>
 		</item>
 	</menu>
