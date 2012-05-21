@@ -21,8 +21,9 @@ fi
 ~/.fehbg &
 tint2 &
 conky &
+#conky -c /home/sasha/.conkyrc_acc_int &
 parcellite &
 volumeicon &
-goldendict & 
+goldendict &
 skype &
 terminator &

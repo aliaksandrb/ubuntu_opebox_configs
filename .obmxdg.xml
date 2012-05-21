@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_pipe_menu>
 	<menu id="xdg-Accessories" label="Accessories">
+		<item label="GVim">
+			<action name="Execute">
+				<execute>gvim -f</execute>
+			</action>
+		</item>
 		<item label="Archive Manager">
 			<action name="Execute">
 				<execute>file-roller</execute>
@@ -9,6 +14,11 @@
 		<item label="Mousepad">
 			<action name="Execute">
 				<execute>mousepad</execute>
+			</action>
+		</item>
+		<item label="Просмотр изображений">
+			<action name="Execute">
+				<execute>gpicview</execute>
 			</action>
 		</item>
 		<item label="Midnight Commander">
@@ -59,6 +69,21 @@
 				<execute>feh</execute>
 			</action>
 		</item>
+		<item label="Просмотр изображений">
+			<action name="Execute">
+				<execute>gpicview</execute>
+			</action>
+		</item>
+		<item label="GIMP Image Editor">
+			<action name="Execute">
+				<execute>gimp-2.6</execute>
+			</action>
+		</item>
+		<item label="Новый рисунок">
+			<action name="Execute">
+				<execute>libreoffice --draw</execute>
+			</action>
+		</item>
 		<item label="Document Viewer">
 			<action name="Execute">
 				<execute>evince</execute>
@@ -86,6 +111,11 @@
 				<execute>gajim</execute>
 			</action>
 		</item>
+		<item label="IcedTea Java Web Start">
+			<action name="Execute">
+				<execute>/usr/bin/javaws</execute>
+			</action>
+		</item>
 		<item label="Веб-браузер Firefox">
 			<action name="Execute">
 				<execute>firefox -new-window</execute>
@@ -97,7 +127,49 @@
 			</action>
 		</item>
 	</menu>
+	<menu id="xdg-Multimedia" label="Sound &amp; Video">
+		<item label="SMPlayer">
+			<action name="Execute">
+				<execute>smplayer</execute>
+			</action>
+		</item>
+		<item label="Добавить в очередь SMPlayer">
+			<action name="Execute">
+				<execute>smplayer -add-to-playlist</execute>
+			</action>
+		</item>
+	</menu>
 	<menu id="xdg-Office" label="Office">
+		<item label="Adobe Reader 9">
+			<action name="Execute">
+				<execute>acroread</execute>
+			</action>
+		</item>
+		<item label="Новый документ">
+			<action name="Execute">
+				<execute>libreoffice --writer</execute>
+			</action>
+		</item>
+		<item label="Новая база данных">
+			<action name="Execute">
+				<execute>libreoffice --base</execute>
+			</action>
+		</item>
+		<item label="LibreOffice">
+			<action name="Execute">
+				<execute>libreoffice</execute>
+			</action>
+		</item>
+		<item label="Новый рисунок">
+			<action name="Execute">
+				<execute>libreoffice --draw</execute>
+			</action>
+		</item>
+		<item label="Новая формула">
+			<action name="Execute">
+				<execute>libreoffice --math</execute>
+			</action>
+		</item>
 		<item label="GoldenDict">
 			<action name="Execute">
 				<execute>goldendict</execute>
@@ -106,6 +178,16 @@
 		<item label="Document Viewer">
 			<action name="Execute">
 				<execute>evince</execute>
+			</action>
+		</item>
+		<item label="Новая электронная таблица">
+			<action name="Execute">
+				<execute>libreoffice --calc</execute>
+			</action>
+		</item>
+		<item label="Новая презентация">
+			<action name="Execute">
+				<execute>libreoffice --impress</execute>
 			</action>
 		</item>
 	</menu>
@@ -121,6 +203,11 @@
 					<execute>obconf</execute>
 				</action>
 			</item>
+			<item label="OpenJDK Java 6 Policy Tool">
+				<action name="Execute">
+					<execute>/usr/bin/policytool</execute>
+				</action>
+			</item>
 			<item label="Предпочтительные приложения">
 				<action name="Execute">
 					<execute>libfm-pref-apps</execute>
@@ -131,6 +218,11 @@
 					<execute>software-properties-gtk</execute>
 				</action>
 			</item>
+			<item label="IcedTea Web Control Panel">
+				<action name="Execute">
+					<execute>/usr/bin/itweb-settings</execute>
+				</action>
+			</item>
 			<item label="Настройка внешнего вида">
 				<action name="Execute">
 					<execute>lxappearance</execute>
@@ -138,9 +230,19 @@
 			</item>
 		</menu>
 		<menu id="xdg-Administration" label="Administration">
+			<item label="GParted">
+				<action name="Execute">
+					<execute>gparted-pkexec</execute>
+				</action>
+			</item>
 			<item label="Synaptic Package Manager">
 				<action name="Execute">
 					<execute>synaptic-pkexec</execute>
+				</action>
+			</item>
+			<item label="Инструмент конфигурации записи на NTFS">
+				<action name="Execute">
+					<execute>/usr/sbin/ntfs-config-root</execute>
 				</action>
 			</item>
 		</menu>

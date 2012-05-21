@@ -1,0 +1,59 @@
+background yes
+ 
+use_xft yes
+xftfont Secret Code:bold:size=8
+xftalpha 1
+ 
+update_interval 3
+ 
+total_run_times 0
+ 
+	own_window no
+	own_window_transparent yes
+	own_window_type desktop
+	own_window_hints undecorated, below,sticky,skip_taskbar,skip_pager
+ 
+double_buffer yes
+ 
+text_buffer_size 1024
+ 
+minimum_size 1004 76
+maximum_width 1004
+ 
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+stippled_borders 0
+border_inner_margin 0
+border_width 0
+ 
+default_color white #1595D5 #11111
+default_shade_color white
+default_outline_color white
+own_window_colour 555555
+ 
+#alignment top_left
+#alignment top_right
+alignment bottom_left
+#alignment bottom_right
+#alignment bottom_middle
+#alignment none
+ 
+gap_x 10
+gap_y 0
+ 
+no_buffers yes
+ 
+uppercase no
+ 
+cpu_avg_samples 2
+ 
+override_utf8_locale yes
+ 
+TEXT
+
+${alignr}${offset -890}${font Secret Code:size=35}${time %H:%M}${font Secret Code:size=20} / ${time %d %b %Y}
+${font Secret Code:size=10}CPU : ${cpu cpu0}% / ${cpu cpu1}%
+RAM : ${memperc}% : ${top_mem name 1}${top_mem mem 1} : ${top_mem name 2}${top_mem mem 2} : ${top_mem name 3}${top_mem mem 3}
+#SWP: $swapperc%

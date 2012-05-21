@@ -1,0 +1,76 @@
+# Create own window instead of using desktop (required in nautilus)
+own_window yes
+own_window_type override
+own_window_transparent yes
+own_window_hints undecorated,below,skip_taskbar,skip_pager
+
+# Use double buffering (reduces flicker, may not work for everyone)
+double_buffer yes
+
+# fiddle with window
+use_spacer yes
+use_xft yes
+
+# Update interval in seconds
+update_interval 1800
+
+# Minimum size of text area
+minimum_size 380 600
+maximum_width 600
+
+override_utf8_locale yes
+
+# Draw shades?
+draw_shades no
+
+# Text stuff
+draw_outline no # amplifies text if yes
+draw_borders no
+#font freesans -12
+xftfont Secret Code:bold:size=8
+uppercase no # set to yes if you want all text to be in uppercase
+
+# Stippled borders?
+stippled_borders 0
+
+# border margins
+border_margin 0
+
+# border width
+border_width 0
+
+# Default colors and also border colors, grey90 == #e5e5e5
+default_color white
+
+own_window_colour brown
+own_window_transparent yes
+
+# Text alignment, other possible values are commented
+alignment top_left
+#alignment top_right
+#alignment bottom_left
+#alignment bottom_right
+
+# Gap between borders of screen and text
+gap_x 3
+gap_y 0
+
+# stuff after 'TEXT' will be formatted on screen
+
+TEXT
+${voffset -3}
+${font conkyweather:size=40}${execi 600  sed -n '2p' ~/accuweather_conky/tod_ton}${font}${goto 75}${voffset -40}${execpi 600 sed -n '1p' /home/aliaksandrbuhayeu/accuweather_conky/tod_ton}: ${execpi 600 sed -n '4p' /home/aliaksandrbuhayeu/accuweather_conky/tod_ton}°C/${execpi 600 sed -n '5p' /home/aliaksandrbuhayeu/accuweather_conky/tod_ton}°C
+${goto 75}${execpi 600 sed -n '3p' /home/aliaksandrbuhayeu/accuweather_conky/tod_ton|fold -w30}
+
+${voffset -40}${offset 220}${font conkyweather:size=40}${execi 600  sed -n '7p' ~/accuweather_conky/tod_ton}${font}${goto 295}${voffset -40}${execpi 600 sed -n '6p' /home/aliaksandrbuhayeu/accuweather_conky/tod_ton}: ${execpi 600 sed -n '9p' /home/aliaksandrbuhayeu/accuweather_conky/tod_ton}°C/${execpi 600 sed -n '10p' /home/aliaksandrbuhayeu/accuweather_conky/tod_ton}°C
+${goto 295}${execpi 600 sed -n '8p' /home/aliaksandrbuhayeu/accuweather_conky/tod_ton|fold -w30}
+
+${voffset -40}${offset 420}${font conkyweather:size=40}${execi 600  sed -n '12p' ~/accuweather_conky/tod_ton}${font}${goto 495}${voffset -40}${execpi 600 sed -n '11p' /home/aliaksandrbuhayeu/accuweather_conky/tod_ton}: ${execpi 600 sed -n '14p' /home/aliaksandrbuhayeu/accuweather_conky/tod_ton}°C/${execpi 600 sed -n '15p' /home/aliaksandrbuhayeu/accuweather_conky/tod_ton}°C
+${goto 495}${execpi 600 sed -n '13p' /home/aliaksandrbuhayeu/accuweather_conky/tod_ton|fold -w30}
+
+${voffset -40}${offset 620}${font conkyweather:size=40}${execi 600  sed -n '17p' ~/accuweather_conky/tod_ton}${font}${goto 695}${voffset -40}${execpi 600 sed -n '16p' /home/aliaksandrbuhayeu/accuweather_conky/tod_ton}: ${execpi 600 sed -n '19p' /home/aliaksandrbuhayeu/accuweather_conky/tod_ton}°C/${execpi 600 sed -n '20p' /home/aliaksandrbuhayeu/accuweather_conky/tod_ton}°C
+${goto 695}${execpi 600 sed -n '18p' /home/aliaksandrbuhayeu/accuweather_conky/tod_ton|fold -w30}
+
+${execi 600 bash /home/aliaksandrbuhayeu/accuweather_conky/accuw_script}
+${font conkyweather:size=60}${execi 600  sed -n '2p' ~/accuweather_conky/curr_cond}${font Secret Code:bold:size=10}${goto 100}${voffset -40}CURRENTLY: ${execpi 600 sed -n '4p' /home/aliaksandrbuhayeu/accuweather_conky/curr_cond}°C
+${goto 100}${execpi 600 sed -n '3p' /home/aliaksandrbuhayeu/accuweather_conky/curr_cond|fold -w30}
