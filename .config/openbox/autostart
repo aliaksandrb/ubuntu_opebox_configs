@@ -23,7 +23,8 @@ tint2 &
 conky &
 #conky -c /home/sasha/.conkyrc_acc_int &
 parcellite &
-volumeicon &
+volti &
+#volumeicon &
 goldendict &
 skype &
 terminator &

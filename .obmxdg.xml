@@ -26,6 +26,11 @@
 				<execute>mc</execute>
 			</action>
 		</item>
+		<item label="Synapse">
+			<action name="Execute">
+				<execute>synapse</execute>
+			</action>
+		</item>
 		<item label="Parcellite">
 			<action name="Execute">
 				<execute>parcellite</execute>
@@ -261,6 +266,11 @@
 				<execute>htop</execute>
 			</action>
 		</item>
+		<item label="dconf Editor">
+			<action name="Execute">
+				<execute>dconf-editor</execute>
+			</action>
+		</item>
 		<item label="Terminator">
 			<action name="Execute">
 				<execute>terminator</execute>
@@ -269,6 +279,11 @@
 		<item label="UXTerm">
 			<action name="Execute">
 				<execute>uxterm</execute>
+			</action>
+		</item>
+		<item label="Gtk-ChTheme">
+			<action name="Execute">
+				<execute>/usr/bin/gtk-chtheme</execute>
 			</action>
 		</item>
 	</menu>
