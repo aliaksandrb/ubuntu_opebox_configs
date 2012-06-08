@@ -74,7 +74,7 @@
 		</item>
 		<item label="LockScreen">
 			<action name="Execute">
-				<execute>xlock -mousemotion +description -mode blank -bg black -fg grey30 -font '-adobe-helvetica-bold-r-normal--*-110-*-*-*-*-*-*' -planfont '-adobe-helvetica-bold-r-normal--*-110-*-*-*-*-*-*' -timeout 6 -info &quot; &quot; -username &quot;  &quot; -password &quot; &quot; -icongeometry 30x30</execute>
+				<execute>xlock -mousemotion +description -mode blank -bg black -fg white -font '-adobe-helvetica-bold-r-normal--*-110-*-*-*-*-*-*' -planfont '-adobe-helvetica-bold-r-normal--*-110-*-*-*-*-*-*'  -timeout 6 -info &quot; &quot; -username &quot;  &quot; -password &quot; &quot; -icongeometry 30x30</execute>
 			</action>
 		</item>
 	</menu>

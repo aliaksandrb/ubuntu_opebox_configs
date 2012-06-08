@@ -16,14 +16,14 @@
 				<execute>mousepad</execute>
 			</action>
 		</item>
-		<item label="Просмотр изображений">
-			<action name="Execute">
-				<execute>gpicview</execute>
-			</action>
-		</item>
 		<item label="Midnight Commander">
 			<action name="Execute">
 				<execute>mc</execute>
+			</action>
+		</item>
+		<item label="Screenshot">
+			<action name="Execute">
+				<execute>gnome-screenshot -a</execute>
 			</action>
 		</item>
 		<item label="Synapse">
@@ -74,14 +74,19 @@
 				<execute>feh</execute>
 			</action>
 		</item>
-		<item label="Просмотр изображений">
+		<item label="Geeqie">
 			<action name="Execute">
-				<execute>gpicview</execute>
+				<execute>geeqie-standard -r</execute>
 			</action>
 		</item>
-		<item label="GIMP Image Editor">
+		<item label="Mirage">
 			<action name="Execute">
-				<execute>gimp-2.6</execute>
+				<execute>mirage</execute>
+			</action>
+		</item>
+		<item label="GNU Image Manipulation Program">
+			<action name="Execute">
+				<execute>gimp-2.8</execute>
 			</action>
 		</item>
 		<item label="Новый рисунок">
@@ -133,9 +138,24 @@
 		</item>
 	</menu>
 	<menu id="xdg-Multimedia" label="Sound &amp; Video">
+		<item label="Volti">
+			<action name="Execute">
+				<execute>volti</execute>
+			</action>
+		</item>
+		<item label="Audacious">
+			<action name="Execute">
+				<execute>audacious</execute>
+			</action>
+		</item>
 		<item label="SMPlayer">
 			<action name="Execute">
 				<execute>smplayer</execute>
+			</action>
+		</item>
+		<item label="Alsamixergui">
+			<action name="Execute">
+				<execute>/usr/bin/alsamixergui</execute>
 			</action>
 		</item>
 		<item label="Добавить в очередь SMPlayer">
